@@ -1,0 +1,8 @@
+# Check if you have a .gitignore file
+ls -la | grep gitignore
+
+# If not, create one and add venv/
+echo "venv/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo ".env" >> .gitignore
